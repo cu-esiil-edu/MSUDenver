@@ -5,4 +5,4 @@ A place to compile and easily access ESIIL Stars projects from Metropolitan Stat
 [ESIIL Stars 2023 Project Page](https://cu-esiil-edu.github.io/MSUDenver-DineWaterQuality2023/)
 
 ## Tips for Building a Website can bbe found below.
-[TipsForWebsite](
+[TipsForWebsite](https://cu-esiil-edu.github.io/MSUDenver/TipsForWebsite/ "Tips for Website")
