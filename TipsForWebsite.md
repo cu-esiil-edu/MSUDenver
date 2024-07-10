@@ -46,27 +46,21 @@
 
 
             pages.  For this, you will want to look for a page heading that includes “nav” at the top of the page like this:
+ 
+ 
+        	layout: default
 
 
-        ---
+        	title: Meet Our Team
 
 
-        layout: default
-
-
-        title: Meet Our Team
-
-
-        nav_order: 2
-
-
-        —
+        	nav_order: 2
 
 
         The config.yml demo will have the word nav in it,  something like this:
 
 
-        nav_enabled: true
+        	nav_enabled: true
 
 
 
@@ -79,12 +73,12 @@
 
 
                 float_logo: true # true, false (default)
+          Or:
+          
+			#blog cover
 
 
-            # blog cover
-
-
-                    cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+		cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
         * If a site doesn’t have the functionality that you want, don’t pick it.  You likely don’t have time to build it in. 
     * After you pick a theme, in your webpage repository on GitHub, add the theme name to the config.yml.	
@@ -121,7 +115,7 @@
         * Within this folder, create a folder titled .keep.  This will allow the img folder to save.  Commit changes.
         * To add an image, first, save it on your computer.  Then, in GitHub, go to Add file > create new file and add image that is saved on your computer.  Commit changes.
         * Go back into the image, right click on the image, and select copy image link.  
-        * Paste image on webpage using Markdown.  Example: ![Arsenic](https://github.com/cu-esiil-edu/MSUDenver-DineWaterQuality2023/blob/main/img/ArsenicGraph2.jpg?raw=true "Arsenic Graph")
+        * Paste image on webpage using Markdown.
 
 Congrats!  Now you can build your webpage!
 
