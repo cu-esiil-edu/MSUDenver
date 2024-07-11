@@ -10,8 +10,11 @@
     * Include a sample of code in the website, with a link to the code if you want it to be reproducible.  Google collab can be saved as Github code and vice versa.
 2. Create your webpage space with url in [github.com/cu-esill-edu](github.com/cu-esill-edu)
     * People working on the webpage, may need to ask Nate and Elsa to invite you to join.  You will need to give them your GitHub username and then you’ll receive a link in email.  Click and you're in!
-    * Create a repository with the format: github.com/cu-esiil-edu/MSUDenver-nameOfYourProject2024.
-    * Save a link to your page in the ReadMe of [github.com/cu-esiil-edu/MSUDenver](github.com/cu-esiil-edu/MSUDenver)
+    * Create a new repository with the format: github.com/cu-esiil-edu/MSUDenver-nameOfYourProject2024.
+      	*  choose "make it public"
+      	*  check "add a README"
+      	*  MIT license should be fine or choose another
+    * Save a link to your page in the README of [github.com/cu-esiil-edu/MSUDenver](github.com/cu-esiil-edu/MSUDenver)
 3. Pick a theme:
     * Make sure it is a GitHub supported theme.  (You do not need to download Jekyll or Ruby so don’t go down that rabbit hole.  The point of GitHub is that it has those supports already built in.)  GitHub supported themes don’t have to be from GitHub.  Here are some sites for theme searching:
         * [https://jekyllthemes.io/free](https://jekyllthemes.io/free)
@@ -24,7 +27,7 @@
              navigation:
 
 
-                    - title: Home
+                     - title: Home
 
 
                       url: /index.html
@@ -42,19 +45,18 @@
                       url: /contact
 
 
-			However, navigation tabs can also be built as individual 
+			However, navigation tabs can also be built as individual pages.
 
-
-            pages.  For this, you will want to look for a page heading that includes “nav” at the top of the page like this:
+		For this, you will want to look for a page heading that includes “nav” at the top of the page like this:
  
  
-        	layout: default
+        		 layout: default
 
 
-        	title: Meet Our Team
+        		 title: Meet Our Team
 
-
-        	nav_order: 2
+	
+      			 nav_order: 2
 
 
         The config.yml demo will have the word nav in it,  something like this:
@@ -69,16 +71,17 @@
     			#blog logo
 
 
-                logo: "/assets/images/df_logo.jpg"
+          		logo: "/assets/images/df_logo.jpg"
 
 
-                float_logo: true # true, false (default)
-          Or:
+          		float_logo: true # true, false (default)
           
-			#blog cover
+          or:
+          
+				#blog cover
 
 
-		cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+				cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
         * If a site doesn’t have the functionality that you want, don’t pick it.  You likely don’t have time to build it in. 
     * After you pick a theme, in your webpage repository on GitHub, add the theme name to the config.yml.	
