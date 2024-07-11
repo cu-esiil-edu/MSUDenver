@@ -1,4 +1,4 @@
-**Tips for Website:**
+**Tips for Building a Website:**
 
 
 
