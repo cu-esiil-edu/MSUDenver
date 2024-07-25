@@ -1,21 +1,27 @@
-**Tips for Building a Website:**
+**Tips for Website:**
 
 
 
-1. Begin a document write-up of your website - at the same time you are creating the presentation slides.  
-    * You can assign 1 or 2 people or the same people who are doing a specific part of the research slides can do it.
+1. **Begin a document write-up of your website** - at the same time you are creating the presentation slides.  
+    * You can assign 1 or 2 people or the same people who are doing a specific part of the research slides can do it.  It may save time to have each person write up a section of the project. Then one person can be the “editor” to make sure it flows.
     * Consider who your audience will be: citizens of the area, students, scientists, etc.
     * Include headings and sub-headings in the write-up as a website would have.  Titles should capture the main point/so what? of that section.
-    * Write out what would be narrated in the presentation, but you can include more detail.  (Make it concise enough that people will read it. 🙂)
-    * Include a sample of code in the website, with a link to the code if you want it to be reproducible.  Google collab can be saved as Github code and vice versa.
-2. Create your webpage space with url in [github.com/cu-esill-edu](github.com/cu-esill-edu)
+    * Write out what would be narrated in the presentation, but you can include more detail.  
+    * Include a sample of code in the website, with a link to the code if you want it to be reproducible.  Google collab can be saved as Github code and vice versa (see number 6 for instructions)
+
+2. **Create your webpage space with a url in [github.com/cu-esill-edu](github.com/cu-esill-edu)**
     * People working on the webpage, may need to ask Nate and Elsa to invite you to join.  You will need to give them your GitHub username and then you’ll receive a link in email.  Click and you're in!
-    * Create a new repository with the format: github.com/cu-esiil-edu/MSUDenver-nameOfYourProject2024.
-      	*  choose "make it public"
-      	*  check "add a README"
-      	*  MIT license should be fine or choose another
-    * Save a link to your page in the README of [github.com/cu-esiil-edu/MSUDenver](github.com/cu-esiil-edu/MSUDenver)
-3. Pick a theme:
+    * Create a repository with the format: [github.com/cu-esiil-edu/MSUDenver-nameOfYourProject2024](github.com/cu-esiil-edu/MSUDenver-nameOfYourProject2024).  See the image below.
+
+<img src = "https://github.com/cu-esiil-edu/MSUDenver/blob/main/img/CreateARepo.jpg?raw=true" width="70%" height="70%">
+
+ * In settings > pages select the main branch
+
+<img src = "https://github.com/cu-esiil-edu/MSUDenver/blob/main/img/CreateARepo2.jpg?raw=true" width="70%" height="70%">
+
+ * Finally, save a link to your page in the ReadMe of [github.com/cu-esiil-edu/MSUDenver](github.com/cu-esiil-edu/MSUDenver)
+
+3. **Pick a theme:**
     * Make sure it is a GitHub supported theme.  (You do not need to download Jekyll or Ruby so don’t go down that rabbit hole.  The point of GitHub is that it has those supports already built in.)  GitHub supported themes don’t have to be from GitHub.  Here are some sites for theme searching:
         * [https://jekyllthemes.io/free](https://jekyllthemes.io/free)
         * [https://jupyterbook.org/en/stable/start/publish.html](https://jupyterbook.org/en/stable/start/publish.html) (these might be more complicated than jekyll)
@@ -27,7 +33,7 @@
              navigation:
 
 
-                     - title: Home
+                    - title: Home
 
 
                       url: /index.html
@@ -45,9 +51,10 @@
                       url: /contact
 
 
-			However, navigation tabs can also be built as individual pages.
+			However, navigation tabs can also be built as individual 
 
-		For this, you will want to look for a page heading that includes “nav” at the top of the page like this:
+
+            pages.  For this, you will want to look for a page heading that includes “nav” at the top of the page like this:
  
  
         		 layout: default
@@ -100,12 +107,9 @@
             Title: Project
 
 
-            description: Water Quantity
+            description: Water Quantityremote_theme: just-the-docs/just-the-docs
 
-
-            remote_theme: just-the-docs/just-the-docs
-
-4. Convert the write-up to code.  There is an easy way: 
+4. **Convert the write-up to code.**  There is an easy way: 
     * Within Google Docs:
         * Extensions > Add-ons > Get add-ons
         * Choose Docs to Markdown
@@ -113,13 +117,30 @@
         * Images will need to be be converted individually: see below.
     * Within Microsoft Word
         * File > Get Add-ins and search for Markdown.  Markdown or Easy Syntax Highlighter are some examples that might work similarly to Docs to Markdown.
-    * Adding images
-        * On GitHub, create a folder to store images and name it img.  Example: cu-esiil-edu<span style="text-decoration:underline;"> </span>/MSUDenver-DineWaterQuality2023/img
-        * Within this folder, create a folder titled .keep.  This will allow the img folder to save.  Commit changes.
-        * To add an image, first, save it on your computer.  Then, in GitHub, go to Add file > create new file and add image that is saved on your computer.  Commit changes.
-        * Go back into the image, right click on the image, and select copy image link.  
-        * Paste image on webpage using Markdown.
+
+5. **Adding images**
+    * On GitHub, create a folder to store images and name it img.  Example: cu-esiil-edu<span style="text-decoration:underline;"> </span>/MSUDenver-DineWaterQuality2023/img
+    * Within this folder, create a folder titled .keep.  This will allow the img folder to save.  Commit changes.
+
+<img src = "https://github.com/cu-esiil-edu/MSUDenver/blob/main/img/imagekeep.jpg?raw=true" width="70%" height="70%">
+
+
+  * To add an image, first, save it on your computer.  Then, in GitHub, go to Add file > upload file and add image that is saved on your computer.  Commit changes.
+  * Go back into the image, right click on the image, and select copy image link.  
+  * Paste image on webpage using Markdown.  Example: ![Image title](image link "image blurb")
+    * For resizing images, you’ll need to use html format. &lt; img src = “image link” alt = “blurb about image” width = “# or % “ height = “# or % “
+6. **Adding a link to the code**
+    * First, you need to save the code into the project repository.
+        * If you need to convert the code from Collab to Github, in Google Collab, go to file >save a copy in GitHub>select location of the repository
+    * Next, in the repository, click into the codespace you just saved.  Click on the 3 dots on the upper right > copy permalink.
+    * On your project page, paste the permalink into Markdown code like this: ![Title](code link “blurb about code”), or you can use html format.
+    * If you want to link to the code with an image, use this Markdown format: [![Title of Image](image link “blurb about image”)](code permalink)
 
 Congrats!  Now you can build your webpage!
 
-Many thanks to Nate and Dr. Culler for lots of these tips!
+
+
+
+
+
+
